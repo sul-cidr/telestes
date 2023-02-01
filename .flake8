@@ -1,0 +1,8 @@
+[flake8]
+# E266  too many leading ‘#’ for block comment
+# E303  too many blank lines (3)
+# W503  line break before binary operator
+ignore = E266, E303, W503
+max-line-length = 89
+max-complexity = 18
+select = B,C,E,F,T,W,B9
