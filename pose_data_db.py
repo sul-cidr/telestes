@@ -218,7 +218,7 @@ class PoseDataDatabase:
         videos = await self.conn.fetch("SELECT id, video_name FROM video;")
         return videos
 
-    async def get_pose_annotations(self, column: str, video_id: int) -> np.ndarray:
+    async def get_pose_annotations(self, column: str, video_id: int) -> list[np.ndarray]:
         annotations = await self.conn.fetch(
             f"SELECT {column} FROM pose WHERE video_id = $1;", video_id
         )
