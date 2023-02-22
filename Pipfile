@@ -5,7 +5,12 @@ name = "pypi"
 
 [packages]
 asyncpg = "*"
+faiss-cpu = "*"
+ipywidgets = "*"
 jsonlines = "*"
+jupyter = "*"
+jupyterlab = "*"
+matplotlib = "*"
 numpy = "*"
 opencv-python = "*"
 pgvector = "*"
